@@ -1,7 +1,7 @@
 title: Quang Ngoc Dang
 description: Aspiring Data Scientist
 url: https://ndang257.github.io
-baseurl: /portfolio
+baseurl: ""
 email: dangquangoc@gmail.com
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
