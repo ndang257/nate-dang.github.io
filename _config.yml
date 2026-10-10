@@ -1,9 +1,8 @@
 title: Quang Ngoc Dang
-description: Data science, thoughtful analysis, and notes from Berlin.
-url: "https://ndang257.github.io"
-baseurl: ""
-email: "dangquangoc@gmail.com"
-timezone: "Europe/Berlin"
+description: Aspiring Data Scientist
+url: https://ndang257.github.io
+baseurl: 
+email: dangquangoc@gmail.com
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
 
@@ -20,14 +19,14 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "projects"
+      type: projects
     values:
-      layout: "project"
+      layout: project
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
 
 exclude:
   - README.md
