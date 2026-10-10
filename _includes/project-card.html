@@ -1,0 +1,14 @@
+<article class="content-card">
+  <a class="card-link" href="{{ include.project.url | relative_url }}">
+    <div class="card-art art-{{ include.project.visual | default: 'chart' }}" aria-hidden="true">
+      <span class="art-label">{{ include.project.category | default: "PROJECT" }}</span>
+      <span class="art-mark"></span>
+    </div>
+    <div class="card-copy">
+      <p class="card-kicker">{{ include.project.category | default: "Project" }}</p>
+      <h3>{{ include.project.title | escape }}</h3>
+      <p>{{ include.project.summary | escape }}</p>
+      <span class="card-arrow" aria-hidden="true">↗</span>
+    </div>
+  </a>
+</article>

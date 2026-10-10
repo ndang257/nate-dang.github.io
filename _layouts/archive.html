@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<section class="archive-page">
+  <a class="back-link" href="{{ '/' | relative_url }}">← Home</a>
+  <p class="eyebrow">{% if page.archive_type == "projects" %}Selected work{% else %}Notes from the process{% endif %}</p>
+  <h1>{{ page.title | escape }}</h1>
+  <p class="archive-intro">{{ page.description | escape }}</p>
+
+  {% if page.archive_type == "projects" %}
+    {% assign entries = site.projects | sort: "order" %}
+  {% else %}
+    {% assign entries = site.posts %}
+  {% endif %}
+  <div class="card-grid archive-grid">
+    {% for entry in entries %}
+      {% if page.archive_type == "projects" %}
+        {% include project-card.html project=entry %}
+      {% else %}
+        {% include post-card.html post=entry %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
