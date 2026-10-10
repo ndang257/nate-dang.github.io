@@ -1,10 +1,16 @@
 title: Quang Ngoc Dang
 description: Data science, thoughtful analysis, and notes from Berlin.
-url: https://ndang257.github.io
-baseurl: /main
-email: dangquangoc@gmail.com
+url: "https://ndang257.github.io"
+baseurl: ""
+email: "dangquangoc@gmail.com"
+timezone: "Europe/Berlin"
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 collections:
   projects:
@@ -14,14 +20,17 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: projects
+      type: "projects"
     values:
-      layout: project
+      layout: "project"
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: post
+      layout: "post"
 
 exclude:
   - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - vendor/
