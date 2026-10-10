@@ -1,7 +1,7 @@
 title: Quang Ngoc Dang
 description: Data science, thoughtful analysis, and notes from Berlin.
 url: https://ndang257.github.io
-baseurl: /nate-dang.github.io
+baseurl: /main
 email: dangquangoc@gmail.com
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
