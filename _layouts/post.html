@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="article-page">
+  <a class="back-link" href="{{ '/posts/' | relative_url }}">← All posts</a>
+  <p class="eyebrow">{{ page.category | default: "Notes & ideas" }}</p>
+  <h1>{{ page.title | escape }}</h1>
+  <p class="article-intro">{{ page.excerpt | strip_html | escape }}</p>
+  <div class="article-meta">{{ page.date | date: "%B %-d, %Y" }} · A note by Quang</div>
+  <div class="article-body">{{ content }}</div>
+</article>
