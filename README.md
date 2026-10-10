@@ -14,4 +14,4 @@ The hobby sentence on the homepage is intentionally marked for personalization. 
 
 ## Publish with GitHub Pages
 
-In the repository’s **Settings → Pages**, choose **Deploy from a branch**, select `main` and the root (`/`) folder, then save. GitHub Pages builds the Jekyll site and publishes it at `https://ndang257.github.io/`. The `_config.yml` uses that root URL with an empty `baseurl`; update `url` and `baseurl` there if the published URL changes.
+In the repository’s **Settings → Pages**, choose **Deploy from a branch**, select `main` and the root (`/`) folder, then save. GitHub Pages builds the Jekyll site and publishes it at `https://ndang257.github.io/portfolio/`. The `_config.yml` uses `https://ndang257.github.io` as `url` and `/portfolio` as `baseurl`; update both if the repository name or published URL changes.
